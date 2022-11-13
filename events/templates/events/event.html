@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}{% endblock %}
+
+{% block content %}
+
+<h3>{{ page.title }}</h3>
+{% image page.photo original as photo_image %}
+<img src="{{ photo_image.url }}" class="event_photo">
+{{ page.body|richtext }}
+<div>{{ page.date }}</div>
+
+<div><a href="{{ page.get_parent.url }}" style="font-size:22px;">назад</a></div>
+
+{% endblock content %}

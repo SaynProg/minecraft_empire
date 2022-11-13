@@ -1,0 +1,6 @@
+{% load static wagtailcore_tags %}
+
+<footer>
+    <img class="footerLogo" src="{% static 'icon.png' %}" alt="logo">
+    <div class="column">{{ item.body|richtext }}</div>
+</footer>

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+<!-- <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}"> -->
+{% endblock extra_css %}
+
+{% block lastevents %}
+<div class="topnav">
+	{% for event in events %}
+	<a href="{% pageurl event %}">{{ event.title }}</a>
+	{% endfor %}
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+<h2>{{ page.title }}</h2>
+{{ page.body|richtext }}
+
+{% endblock content %}

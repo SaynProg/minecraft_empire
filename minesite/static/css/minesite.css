@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@media (max-width: 1820px){
+  .blog_item {
+    width: 50%;
+  }
+}
+@media (max-width: 768px){
+  .blog_item {
+    width: 90%;
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+.menu {
+  list-style: none;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(4, 39, 51);
+  margin:0%;
+  padding:0%;
+  color: white;
+}
+
+/*header{
+  background-image: url();
+}
+*/
+
+.site_name {
+  display: inline-block;
+  font-size: 30px;
+  text-shadow: 10px 10px 10px black;
+  text-align: top;
+  margin: auto auto;
+
+}
+
+.background-img {
+  background-image: url('/static/trava.jpg'); 
+  background-size: 350px 350px;
+}
+
+.topnav {
+  background-color: rgb(40, 40, 40);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+footer{
+  background:rgb(4, 39, 51);
+  padding:2%;
+  color: white;
+}
+
+.headerLogo{
+  width:20%;
+}
+
+.pagination {
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+
+.event_photo {
+  max-width: 100%;
+  border-radius:40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rural_image {
+  max-width: 100%;
+  height: 30%;
+  border-radius:40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pagination li a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.pagination li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.pagination li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.footerLogo{
+  width:20%;
+}
+
+.column{
+  padding:1.5%;
+}
+  
+.info{
+  display: flex;
+}
+
+.copy{
+  text-align:center;
+  font-size:60%;
+}
+
+main{
+	padding:3%;
+}
+
+section{
+  border-style: none;
+  padding:1%;
+  margin:1%;
+  border-radius:40px;
+  background: white;
+  display: flex;
+  gap:1%;
+  color: black;
+}
+/*  
+section img{
+  height:200px;
+}*/
+  
+.img{
+  margin-top:0%;
+  float:left;
+}
+
+.blog_item{
+  display: block;
+  padding: 10px;
+}
+
+.photo_image {
+  width: 200px;
+  border-radius:40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team_container {
+  width: 90%;
+}
+
+.cardInfo{
+  width:70%;
+}
+  
+a{
+  color: green;
+}
+  
+.new{
+  text-align: center;
+  color: white;
+}
